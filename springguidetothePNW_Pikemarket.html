@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pikemarket</title>
+<link rel="stylesheet" type="text/css" href="springguidetothePNW.css">
+<style>
+div.gallery1 {
+  float: left;
+  width: 50%;
+  display: table-cell;
+}
+div.gallery2{
+  float: right;
+  width:50%;
+  display: table-cell;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.ani {
+  width: 25px;
+  height: 25px;
+  background-color: #fdc921;
+  position: relative;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:#fffdf7; left:0px; top:-430px;}
+  25%  {background-color:#99d6ea; left:680px; top:-430px;}
+  50%  {background-color:#6798c0; left:680px; top:450px;}
+  75%  {background-color:#99d6ea; left:0px; top:450px;}
+  100% {background-color:#fffdf7; left:0px; top:-430px;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="background">
+
+<h1>The Great Pikemarket</h1>
+
+<div class="gallery1">
+  <a target="_blank" href="pike1.jpg">
+    <img src="pike1.jpg" alt="pike1" width="705" height="auto">
+  </a>
+  <div class="desc"></div>
+</div>
+
+
+<p>
+	Pike Place Market is a public market in Seattle, Washington, United States. It opened on August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States. Overlooking the Elliott Bay waterfront on Puget Sound, it serves as a place of business for many small farmers, craftspeople and merchants. It is named for its central street, Pike Place, which runs northwest from Pike Street to Virginia Street on the western edge of Downtown Seattle. Pike Place Market is Seattle's most popular tourist destination and the 33rd most visited tourist attraction in the world, with more than 10 million annual visitors.
+</p>
+
+<div class="gallery2">
+  <a target="_blank" href="pike2.jpg">
+    <img src="pike2.jpg" alt="pike2" width="700" height="auto">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="ani"></div>
+
+<!--
+<button onclick = "window.location.href='springguidetothePNW.html';">homepage</button>
+<button onclick = "window.location.href='springguidetothePNW_UW.html';">university of Washington</button>
+<button onclick = "window.location.href='springguidetothePNW_nature.html';">Nature</button>
+-->
+
+</div>
+
+</body>
+</html>
+
+<footer>
+	<a href="https://en.wikipedia.org/wiki/Pike_Place_Market">wikipedia-pikemarket</a>
+</footer>

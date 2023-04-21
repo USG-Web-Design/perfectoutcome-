@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The nature here in PNW</title>
+<link rel="stylesheet" type="text/css" href="springguidetothePNW.css">
+<style>
+div.gallery1 {
+  float: left;
+  width: 45%;
+  display: table-cell;
+}
+div.gallery2{
+  float: right;
+  width:55%;
+  display: table-cell;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.ani {
+  width: 25px;
+  height: 25px;
+  background-color: #fdc921;
+  position: fixed;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes example {
+  0%   {background-color:#fffdf7; left:0px; top:0px;}
+  50%  {background-color:#6798c0; left:0px; top:730px;}
+  100% {background-color:#fffdf7; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+<div class="effectheading"> 
+<h1>Mount Rainier</h1>
+</div>
+
+<div class="gallery1">
+  <a target="_blank" href="mountrainier2.jpg">
+    <img src="mountrainier2.jpg" alt="mount2" width="600" height="auto">
+  </a>
+  <div class="desc"></div>
+</div>
+
+
+<p>
+	Established on March 2, 1899, Mount Rainier is America's fifth oldest national park. Much of what we associate with national parks today (rustic architecture, museums, auto touring, and park rangers) has roots at Mount Rainier. The naturalists at Mount Rainier were some of the first in the National Park Service. From 1923 through 1939, they published a series of Nature Notes for park visitors. Topics included plants, wildlife, road and trail conditions, park regulations, safety cautions, historical notes, along with inspirational poems, illustrations and anecdotes. At one time, over 600 copies of the notes were distributed in the park and mailed to other parks as well as to individual subscribers throughout the U.S.
+</p>
+
+<div class="gallery2">
+  <a target="_blank" href="mountrainier1.jpg">
+    <img src="mountrainier1.jpg" alt="mount1" width="720" height="auto">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="ani"></div>
+<br>
+<br>
+<button onclick = "window.location.href='springguidetothePNW.html';">homepage</button>
+<button onclick = "window.location.href='springguidetothePNW_UW.html';">university of Washington</button>
+<button onclick = "window.location.href='springguidetothePNW_Pikemarket.html';">Pike Market</button>
+</div>
+
+</body>
+</html>
+
+<footer>
+	<a href="http://npshistory.com/nature_notes/mora/nn-intro.htm">history of Mt.Rainier</a>
+</footer>
