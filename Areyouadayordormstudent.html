@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Are you a day/dorm student</title>
+<link rel="stylesheet" type="text/css" href="dayordorm.css">
+</head>
+
+<body>
+	<h1>Are you a Day or Dorm Student?</h1>
+
+	<form>
+		<label for="">What's your name?</label>
+		<br>
+		<input type="text" id="userName" name="username">
+		<br>
+		<br>
+
+		<!--<input type="radio" name="check" value="checked">
+		<br>-->
+		<h2>Do you participate in sports? (not including dance team)</h2>
+		<input type="radio" name="check1" id="day1">
+		<label for= "day1">Yes</label>
+		<br>
+		<input type="radio" name="check1" id="dorm1">
+		<label for= "dorm1">No</label>
+
+		<h2>What music do you listen more?</h2>
+		<input type="radio" name="check2" id="day2">
+		<label for= "day2">Kpop</label>
+		<br>
+		<input type="radio" name="check2" id="dorm2">
+		<label for= "dorm2">pop music</label>
+
+		<h2>Do you care about your academics more than average?</h2>
+		<input type="radio" name="check3" id="day3">
+		<label for= "day3">No</label>
+		<br>
+		<input type="radio" name="check3" id="dorm3">
+		<label for= "dorm3">Yes</label>
+
+		<h2>Do you have school lunch?</h2>
+		<input type="radio" name="check4" id="day4">
+		<label for= "day4">No</label>
+		<br>
+		<input type="radio" name="check4" id="dorm4">
+		<label for= "dorm4">Yes</label>
+
+		<h2>If you can drive, how many days out of the week do you drive?</h2>
+		<input type="radio" name="check5" id="dorm5">
+		<label for= "dorm5">1-3 days</label>
+		<br>
+		<input type="radio" name="check5" id="day5">
+		<label for= "day5">4-7 days</label>
+
+		<h2>Do you feel homesick? (not counting summer)</h2>
+		<input type="radio" name="check6" id="day6">
+		<label for= "day6">Yes</label>
+		<br>
+		<input type="radio" name="check6" id="dorm6">
+		<label for= "dorm6">No</label>
+
+		<h2>Where do you shop for groceries mostly?</h2>
+		<input type="radio" name="check7" id="day7">
+		<label for= "day7">Fredmeyer</label>
+		<br>
+		<input type="radio" name="check7" id="day8">
+		<label for= "day8">Walmart</label>
+		<br>
+		<input type="radio" name="check7" id="day9">
+		<label for= "day9">Costco</label>
+		<br>
+		<input type="radio" name="check7" id="day10">
+		<label for= "day10">Trader Joe's</label>
+		<br>
+		<input type="radio" name="check7" id="dorm7">
+		<label for= "dorm7">Target</label>
+		<br>
+		<input type="radio" name="check7" id="dorm8">
+		<label for= "dorm8">Hmart</label>
+		<br>
+		<input type="radio" name="check7" id="day11">
+		<label for= "day11">Not listed</label>
+		<br>
+		<br>
+		<input type="button" name="Submit" value="Enter" onclick="hello();">
+	</form>
+
+</body>
+
+<script type="text/javascript">
+	
+	function hello () {
+
+		
+		var day_1 = document.getElementById("Day1").value;
+		var response = "Good to meet you, ";
+		reponse = day_1 + day1;
+
+		
+	}
+</script>
+
+</html>
