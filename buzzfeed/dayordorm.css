@@ -1,0 +1,98 @@
+
+h1 {
+	padding: 20px;
+	background-color: #123C69;
+	opacity: 70%;
+	text-align: center;
+	border-radius: 400px;
+
+}
+.dropdown {
+	color: rgb(214, 184, 103);
+}
+
+body {
+	background-color: rgb(214, 184, 103);
+	text-align: center;
+}
+
+h2 {
+
+	color: rgb(214, 184, 103);
+	text-align: center;
+	background-color: #123C69 ;
+	opacity: 70%;
+	margin-left: 250px;
+	margin-right: 250px;
+	border-radius: 600px;
+	font-size: 40px;
+
+}
+ 
+p {
+	color: #123C69;
+	font-size: 40px;
+}
+ 
+.dropdown-content{
+                font-size: 15px;
+                display: none;
+                padding: 0;
+                margin: 1;
+                text-decoration: none;
+}
+ 
+ 
+.dropdown:hover{
+                background-color: rgba(0,0,0,.4);
+ 
+}
+ 
+.dropdown:hover .dropdown-content{
+                display: block;
+                font-family: B612;
+                color: ;
+                text-decoration: none;
+            }
+
+div {
+  
+  display: block;
+  margin: 45px;
+
+  
+  position: relative;
+  animation-name: Anima;
+  animation-timing-function: linear;
+  animation-duration: 5.0s;
+  animation-iteration-count: 100000;
+  font-family: fantasy;
+  font-size: 35px;
+ 
+}
+
+/* @keyframes Anima {
+  0% {color: rgb(181, 65, 154);}
+  10% {color: rgb(227, 131, 14);}
+  20% {color: rgb(232, 221, 14);}
+  30% {color: rgb(21, 158, 11);}
+  40% {color: rgb(5, 119, 125);}
+  50% {color: rgb(131, 213, 222);}
+  60% {color: rgb(71, 127, 191);}
+  70% {color: rgb(149, 129, 201);}
+  80% {color: rgb(181, 65, 154);}
+  100% {color: rgb(181, 65, 154);}
+ } */
+@keyframes Anima {
+  0% {color: rgb(214, 184, 103);}
+  20% {color: rgb(178, 219, 180);}
+  40% {color: rgb(178, 219, 206);}
+  60% {color: rgb(178, 190, 219);}
+  100% {color: rgb(214, 184, 103);}
+}
+
+label {
+	font-size: 30px;
+	font-family: Fantasy;
+}
+
