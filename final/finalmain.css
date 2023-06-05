@@ -1,0 +1,74 @@
+/*this is for the nav bar*/
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #F1DEC9;
+  font-family: Comic Sans MS;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #8D7B68;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffe8d6;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+.hovercontent {
+  display: none;
+  font-family: Comic Sans MS;
+}
+
+.title:hover + .hovercontent {
+  display: block;
+  color: #8D7B68;
+  font-family: Comic Sans MS;
+  font-size: 20px;
+}
+
+button {
+  width: 45%;
+  float: left;
+  margin: 35px;
+  background-color: #F1DEC9;
+}
+
+p {
+  font-family: Comic Sans MS;
+}
+
+h1 {
+  font-family: Comic Sans MS;
+  color: #6c584c;
+}
+
+/*this animation is for the intro image*/
+.introimg {
+    margin-left: 10px;
+    width: 1400px;
+    height: auto;
+    animation: fade-in;
+    animation-duration: 6s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+

@@ -1,0 +1,90 @@
+/*Thex padding create space around the heading, and the opacity makes the heading more transparent*/
+h1 {
+	padding: 20px;
+	background-color: #123C69;
+	opacity: 70%;
+	text-align: center;
+	border-radius: 400px;
+
+}
+
+/*This changes the color of the dropdown*/
+.dropdown {
+	color: rgb(214, 184, 103);
+}
+
+/*the text-align makes sure the text is in the centre position regarding the picture*/
+body {
+	background-color: rgb(214, 184, 103);
+	text-align: center;
+}
+
+/*The margin left and margin right change the size of the background, and the opacity makes the heading more transparent*/
+
+h2 {
+
+	color: rgb(214, 184, 103);
+	text-align: center;
+	background-color: #123C69 ;
+	opacity: 70%;
+	margin-left: 250px;
+	margin-right: 250px;
+	border-radius: 600px;
+	font-size: 40px;
+
+}
+
+/*the border radius turns the background color into a circle, basically removing the sharp edges */
+p {
+	color: #123C69;
+	font-size: 40px;
+}
+ /* This is the dropdown bar for the citations and it uses :hover */
+.dropdown-content{
+                font-size: 15px;
+                display: none;
+                padding: 0;
+                margin: 1;
+                text-decoration: none;
+}
+ 
+ 
+.dropdown:hover{
+                background-color: rgba(0,0,0,.4);
+ 
+}
+ 
+.dropdown:hover .dropdown-content{
+                display: block;
+                font-family: B612;
+                color: ;
+                text-decoration: none;
+            }
+/* This div has the main css for the animation and for the actual style*/
+div {
+  
+  display: block;
+  margin: 45px;
+  position: relative;
+  animation-name: Anima;
+  animation-timing-function: linear;
+  animation-duration: 5.0s;
+  animation-iteration-count: 100000;
+  font-family: fantasy;
+  font-size: 35px; 
+}
+
+/* these are the keyframes/ progressions of the text color in the main header of the page*/
+@keyframes Anima {
+  0% {color: rgb(214, 184, 103);}
+  20% {color: rgb(178, 219, 180);}
+  40% {color: rgb(178, 219, 206);}
+  60% {color: rgb(178, 190, 219);}
+  100% {color: rgb(214, 184, 103);}
+}
+
+label {
+	font-size: 30px;
+	font-family: Fantasy;
+}
+

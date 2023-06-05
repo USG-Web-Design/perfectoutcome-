@@ -1,0 +1,143 @@
+h1 {
+	font-size: 60px;
+	padding: 30px;
+	text-align: center;
+	color: #59504A;
+	font-family: Snell Roundhand, cursive;
+}
+
+p {
+	font-size: 30px;
+	margin: 20px;
+	color: #59504A;
+	font-family: URW Chancery L, cursive;
+	 -webkit-text-stroke: 0.5px #693A47; 
+}
+
+/*this is the link I used to put an image as the background*/
+body {
+  background-image: url("https://static.vecteezy.com/system/protected/files/002/170/606/vecteezy_seattle-city-downtown-skyline-cityscape-in-washington-state-usa_2170606.jpg");
+  background-size: 2000px;
+}
+
+button {
+  background-color: #FFF1D6; 
+  color: #59504A;
+  border: none;
+  padding: 100px 117px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: URW Chancery L, cursive;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 30px;
+  text-align: center;
+  color: #59504A;
+  font-family: Snell Roundhand, cursive;
+}
+
+p {
+  font-size: 25px;
+  margin: 20px;
+  color: #59504A;
+  font-family: URW Chancery L, cursive;
+   -webkit-text-stroke: 0.5px #693A47; 
+}
+
+/*we used this part of the css to describe the button*/
+button {
+  background-color: #C799A6; 
+  border: none;
+  color: #59504A;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: URW Chancery L, cursive;
+}
+
+div.h2::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+div.h2:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+div.h2::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+div.h2 {
+  position: relative;
+  font-size: 40px;
+}
+
+/*the display flex is easier to manipulate when making the layout*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+div.background {
+background-color: beige;
+}
+
+div.dropdown ul {
+	float: left;
+    list-style-type: none;
+    margin:auto;
+    padding: 3000p 0px;
+    width: 1300px;
+
+}
+
+div.dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #59504A;
+    font-family: URW Chancery L, cursive;
+ }
+
+/*this is the hover color*/
+div.dropdown li a:hover {
+    color: #ffafcc;
+}
+
+div.dropdown li {
+    margin: 0;
+    padding: 10px;
+    background-color: #FFF1D6;
+    font-size: 24px;
+}
+
+div.dropdown li:hover {
+    background-color: #FFF1D6;
+}
+
+div.dropdown.dropdown-content {
+    display: none;
+}
+
+
+
+

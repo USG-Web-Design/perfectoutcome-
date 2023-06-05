@@ -1,0 +1,207 @@
+/*this is the changing picture animation. There is a 1s easing in effect.*/
+#hoi img {
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+/*this is the code for the picture on the top, it sets the top image's opacity as 0 when the mouse is hovering over it, therefore making the effect of changing pictrue when the mouse is on top of the image.*/
+#hoi img.top:hover {
+  opacity:0;
+}
+
+/*this is the code for the chaging color heading. The animation is a linear function with an ifinate iteration count, making it works continously.*/
+h1 {
+  display: block;
+  margin: 35px;
+  position: relative;
+  animation-name: Anima;
+  animation-timing-function: linear;
+  animation-duration: 6.0s;
+  animation-iteration-count: infinite;
+  font-family: Lobster;
+  font-size: 40px; 
+  text-align: center;
+}
+
+/* these are the keyframes of the text color in h1*/
+@keyframes Anima {
+  0% {color:#F5EFE7;}
+  20% {color:#D8C4B6;}
+  40% {color:#4F709C;}
+  60% {color:#213555;}
+  100% {color:#537188;}
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Lobster;
+}
+
+h3 {
+  margin: 550px;
+}
+
+p{
+  font-size: 20px;
+  font-family: Didot;
+}
+
+/*this makes sure the timeline will not overlap each other*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a8afc2;
+  color: #223d4b;
+  font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*this is used to regulate the position of the timeline*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #e2c2cf;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/*This regulates how big the margin and padding are around the text block for the timeline*/
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/*This is used for the circle on the timeline*/
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #a1526d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*This is used for the position of the timeline on the left*/
+.left {
+  left: 0;
+}
+
+/*The position of timeline to the right*/
+.right {
+  left: 50%;
+}
+
+/*This part of code edited a white square block into the arrow on the top right corner of the left containers, pointing to the right*/
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/*Add arrows to the right container pointing left*/
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/*Changes the position of the circles, so the ones for the right container would be on the timeline*/
+.right::after {
+  left: -16px;
+}
+
+/*The text boxes*/
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/*This code makes the timeline responsive*/
+@media screen and (max-width: 600px) {
+/*Place the timelime to the left*/
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+
+/*Make all right containers behave like the left ones*/
+  .right {
+    left: 0%;
+  }
+}
+
+/*this code defines the button and dropdown contents.*/
+.drop {
+   position: relative;
+   display: inline-block;
+}
+.drop-content {
+   display: none;
+   position: absolute;
+   background-color: #e2c2cf;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px #e2c2cf;
+
+}
+.drop-content a {
+   color: #754557;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+.drop-content a:hover {
+   background-color: #e2c2cf;
+}
+.drop:hover .drop-content {
+   display: block;
+}
+.button {
+  background-color: darkgray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 40px;
+  cursor: pointer;
+}

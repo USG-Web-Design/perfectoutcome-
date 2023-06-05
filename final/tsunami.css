@@ -1,0 +1,65 @@
+body {
+	background-color: fbfbf2;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 20px;
+}
+
+h1 {
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+/*this will center the video in the center of the web page*/
+iframe{
+	align-items: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+li a {
+	display: block;
+	text text-decoration: none;
+	color: cornflowerblue;
+	text-align: center;
+}
+
+/*this will change the color and padding of the list*/
+li a:hover {
+	color: deepskyblue;
+}
+
+li {
+	margin: 0;
+	padding: 10px;
+	background-color: aliceblue;
+	font-size: 30px;
+}
+
+li:hover {
+	background-color: aliceblue;
+
+}
+
+footer {
+	text-align: center;
+}
+
+/*this is for the drop down content in the list*/
+.dropdown-content { 
+	display: none;
+}
+
+.dropdown:hover .dropdown-content { 
+	display: block;
+}
+

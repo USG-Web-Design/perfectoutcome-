@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Are you a day/dorm student</title>
+<link rel="stylesheet" type="text/css" href="dayordorm.css">
+</head>
+
+<body>
+	<h1> ARE YOU A DAY OR DORM STUDENT? </h1>
+	<form>
+	
+
+		<!--<input type="radio" name="check" value="checked">
+		<br>-->
+
+		<!--we used table to allocate the page into parts to make sure the pictures and texts will not overlap each other-->
+		<table>
+		<tr>
+		<h2>Do you participate in sports? (not including dance team)</h2>
+		<!--we used padding to make the choices and pictures be in the centre of the web page-->
+		<td style="padding-left: 300px">
+		<img src="yes.jpeg">
+		<!--The break seperated the picture and the checkbox-->
+		<br>
+		<!--This choice is labeled as day, cuz that we think day student would be more likely to pick this choice-->
+		<input type="radio" name="check1" id="day1">
+		<label for= "day1">Yes</label>
+	    </td>
+	    <td class="class1">
+		<img src="no.jpeg">
+		<br>
+		<input type="radio" name="check1" id="dorm1">
+		<label for= "dorm1">No</label>
+		</td>
+	    </tr>
+		</table>
+
+		<table>
+		<tr>
+		<h2>What music do you listen more?</h2>
+	    <td style="padding-left: 230px;">
+	    <img src="popmusic.jpeg">
+	    <br>
+		<input type="radio" name="check2" id="day2">
+		<label for= "day2">US pop music</label>
+	</td>
+	<td>
+		<img src="asianpop.jpeg">
+		<br>
+		<input type="radio" name="check2" id="dorm2">
+		<label for= "dorm2">Asian pop music</label>
+	</td>
+	<tr>
+	</table>
+
+	<table>
+		<tr>
+		<h2>Do you care about your academics more than average?</h2>
+		<td style="padding-left: 300px">
+		<img src="yes.jpeg">
+		<br>
+		<input type="radio" name="check3" id="dorm3">
+		<label for= "dorm3">Yes</label>
+	</td>
+	<td>
+		<img src="no.jpeg">
+		<br>
+		<input type="radio" name="check3" id="day3">
+		<label for= "day3">No</label>
+	</td>
+	</tr>
+	</table>
+
+	<table>
+		<tr>
+			<h2>Do you have school lunch?</h2>
+		<td style="padding-left: 300px">
+		<img src="yes.jpeg">
+		<br>
+		<input type="radio" name="check4" id="dorm4">
+		<label for= "dorm4">Yes</label>
+	</td>
+	<td>
+		<img src="no.jpeg">
+		<br>
+		<input type="radio" name="check4" id="day4">
+		<label for= "day4">No</label>
+	</td>
+		<tr>
+	</table>
+
+	<table>
+			<tr>
+		<h2>If you can drive, how many days out of the week do you drive?</h2>
+		<td style="padding-left: 250px">
+		<img src="driving.jpeg">
+		<br>
+		<input type="radio" name="check5" id="dorm5">
+		<label for= "dorm5">1-3 days</label>
+	</td>
+		<td>
+		<img src="driving2.jpeg">
+		<br>
+		<input type="radio" name="check5" id="day5">
+		<label for= "day5">4-7 days</label>
+	</td>
+		<td>
+		<img src="bus.jpeg">
+		<br>
+		<input type="radio" name="check5" id="NA">
+		<label for= "day5">I don't drive</label>
+	</td>	
+	</tr>
+	</table>
+
+	<table>
+		<tr>
+			<h2>Do you feel homesick? (not counting summer)</h2>
+		<td style="padding-left: 300px">
+		<img src="yes.jpeg">
+		<br>
+		<input type="radio" name="check4" id="dorm6">
+		<label for= "dorm6">Yes</label>
+	</td>
+	<td>
+		<img src="no.jpeg">
+		<br>
+		<input type="radio" name="check4" id="day6">
+		<label for= "day6">No</label>
+	</td>
+		<tr>
+	</table>
+
+
+		<h2>Where do you shop for groceries mostly?</h2>
+	<table>
+		<tr>
+		<td>
+		<img src="fredmeyer.jpeg">
+		<br>
+		<input type="radio" name="check7" id="day7">
+		<label for= "day7">Fredmeyer</label>
+		</td>
+		<td>
+		<br>
+		<img src="walmart.jpeg">
+		<input type="radio" name="check7" id="day8">
+		<br>
+		<label for= "day8">Walmart</label>
+		</td>
+		<td>
+		<br>
+		<img src="costco.jpeg">
+		<input type="radio" name="check7" id="day9">
+		<br>
+		<label for= "day9">Costco</label>
+	    </td>
+	    <td>
+	    <img src="traderjoes.jpeg">
+		<input type="radio" name="check7" id="day10">
+		<br>
+		<label for= "day10">Trader Joe's</label>
+		</td>
+		<td>
+		<img src="target.jpeg">
+		<input type="radio" name="check7" id="dorm7">
+		<br>
+		<label for= "dorm7">Target</label>
+		<td>
+		<img src="hmart.jpeg">
+		<input type="radio" name="check7" id="dorm8">
+		<br>
+		<label for= "dorm8">Hmart</label>
+		</td>
+		<br>
+		<br>
+		<td>
+		<input type="radio" name="check7" id="day11">
+		<label for= "day11">Not listed</label>
+		</td>
+	</tr>
+	</table>
+	<br>
+	<br>
+		<input type="button" name="Submit" value="Enter" onclick="Quiz();">
+		<p id="response"> Are you a DAY or DORM Student?!?! </p>
+	</table>
+	</form>
+
+</body>
+
+<script type="text/javascript">
+	
+	function Quiz () {
+
+
+		var response = "";
+
+		var outcomeDay= 0;
+		var outcomeDorm= 0;
+
+		if (document.getElementById("day1").checked) {
+			outcomeDay = outcomeDay + 1;
+		}
+
+		if (document.getElementById("day2").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day3").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day4").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day5").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day6").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day7").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day8").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day9").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day10").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("day11").checked) {
+			outcomeDay = outcomeDay + 1;}
+
+		if (document.getElementById("dorm1").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+
+		if (document.getElementById("dorm2").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm3").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm4").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm5").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm6").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm7").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+		if (document.getElementById("dorm8").checked) {
+			outcomeDorm = outcomeDorm + 1;}
+
+
+		if (outcomeDay == outcomeDorm) {response = "You could both be a day and dorm student";}
+		if (outcomeDay > outcomeDorm) {response = "You are most likely and destined to be a day student";}
+		if (outcomeDay < outcomeDorm) {response = "You are most likely and destined to be a dorm student";}
+		
+		
+		window.alert("yup")
+		document.getElementById("response").innerHTML = response;
+
+	}
+
+
+</script>
+
+<h1 class ="dropdown" style="text-align:center; text-decoration: none;"> Citations <p class = "dropdown-content" style="text-align:left;">
+ 
+<a href=https://www.aw.org> Annie Wright Schools Home Page</a> <br> <br>
+<a href=https://www.pinterest.com> Image Source</a>
+ 
+</p> </h1>
+
+</html>
+
+
+
+
+
+
+
+
+

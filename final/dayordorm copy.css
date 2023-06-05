@@ -1,0 +1,47 @@
+
+h1 {
+	color: whitesmoke;
+	padding: 20px;
+	background-color: #123C69;
+	opacity: 70%;
+	text-align: center;
+}
+
+body {
+	background-color: #EEE2DC;
+	text-align: center;
+}
+
+h2 {
+
+	color: #123C69;
+	text-align: center;
+
+}
+ 
+p {
+	color: #123C69;
+	font-size: 40px;
+}
+ 
+.dropdown-content{
+                font-size: 15px;
+                display: none;
+                padding: 0;
+                margin: 1;
+                text-decoration: none;
+}
+ 
+ 
+.dropdown:hover{
+                background-color: rgba(0,0,0,.4);
+ 
+}
+ 
+.dropdown:hover .dropdown-content{
+                display: block;
+                font-family: B612;
+                color: white;
+                text-decoration: none;
+            }
+

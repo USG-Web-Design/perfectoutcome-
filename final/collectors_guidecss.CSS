@@ -1,0 +1,87 @@
+body {
+	font-size: 30px;
+	background: beige;
+	font-family: BodoniSvtyTwoSCITCTT-Book;
+}
+
+/*the margin changed the space between the table*/
+table {
+	border: solid;
+	margin: 40px;
+}
+
+td {
+	border: dashed;
+}
+
+th {
+	border: dotted;
+}
+
+h1 {
+	background-color: burlywood;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	border-style: dotted;
+	border-width: 7px;
+	border-radius: 40px;
+	color: #331a00;
+}
+
+h2 {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 35px;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	color: burlywood;
+}
+
+li a:hover {
+	color: beige;
+}
+
+li {
+	margin: 0;
+	padding: 10px;
+	background-color: beige;
+	font-size: 24px;
+}
+
+/*this changes the color of the list when a mouse is hovering over it*/
+li:hover {
+	background-color: beige;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 20px;
+}
+
+/*this changes the margin around the button and the style to it*/
+.button {
+  background-color: darkgray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 40px;
+  cursor: pointer;
+}

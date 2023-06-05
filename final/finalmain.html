@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amy's Journey with Web Design</title>
+		<style type="text/css"> </style>
+		<link rel="stylesheet" type="text/css" href="finalmain.css">
+	</head>
+
+<body>
+
+<!--This is the code for the navigation bar. if you click the name on the nav bar, it is a relative link that will link you to the location of the web page on the web-->
+	<ul>
+  		<li><a href="#hoi">History of Internet</a></li>
+		<li><a href="#Collectors_guide">Collector's guide</a></li>
+ 		<li><a href="#Tsunami">Tsunami</a></li>
+  		<li><a href="#Buzzfeed_quiz">Buzzfeed</a></li>
+  		<li><a href="#PNW_tourguide">Spring Guide for PNW</a></li>
+  		<li><a href="#SuRpRiSeeee">a little surprise...</a></li>
+	</ul>
+
+<!--This is an image for the introduction-->
+    <img class="introimg" id="img1" src="intro.jpeg">
+
+<!--This is button with text and an image on it. When your mouse hover over it, you will get a dropdown with more explanation of that website beneath it. It also functions as a link to link you to the specific web page.-->
+	<div id="hoi">
+	<a href="historyofinternet.html"> 
+	<button>
+		<div class="title">
+		<h1>History of Internet</h1> 
+		<img src="HOI.png" width="50%" height="auto">
+		</a>
+	</div>
+	<div class="hovercontent">
+		<p>The history of the internet is a  remarkable tale of innovation, collaboration, and the continous pursuit of connectivity. In just a few decades, the Internet has gone through a revolutionary progress and now turned into an essential part of human's lives. If you wish to learn more about the history of Internet, this website will be able to give you more information about how Internet evolved. Click to learn more. </p>
+	</div>
+	</button>
+	</div>
+
+	<div id="Collectors_guide">
+	<a href="collectors_guide_main.html">
+	<button>
+		<div class="title">
+		<h1>Fashion Collectors guide</h1>
+		<img src="Collector.png" width="50%" height="auto">
+		</a>
+	</div>
+	<div class="hovercontent">
+	<p>Do you sometimes get confused about what style suits you the best? Trust me, this website is meant for you! Click this website to find the best style JUST FOR YOU! :D</p>
+	</div>
+	</button>
+	</div>
+
+	<div id="Tsunami">
+	<a href="Tsunami.html">
+	<button>
+	<div class="title">
+	<h1>Tsunami</h1>
+	<img src="Tsunami.png" width="50%" height="auto">
+	</a>
+	</div>
+	<div class="hovercontent">
+	<p>A tsunami is a devastating natural disaster that can cause immense destruction and loss of life. It is typically triggered by an underwater earthquake, volcanic eruption, or landslide, which displaces a large volume of water. </p>
+	</div>
+	</button>
+	</div>
+
+	<div id="Buzzfeed_quiz">
+	<a href="dayordorm.html">
+	<button style="left: 95%;">
+	<div class="title">
+	<h1>Are you a Day or Dorm Student?</h1>
+	<img src="buzzfeed.png" width="50%" height="auto">
+	</a>
+	</div>
+	<div class="hovercontent">
+	<p>Do you want to know whether you are a dorm student or a day student? Check out this amazing buzzfeed quiz and see your result! </p>
+	</div>
+	</button>
+	</div>
+
+	<div id="PNW_tourguide">
+	<a href="springguidetothePNW.html">
+	<button>
+	<div class="title">
+	<h1>Spring Guide to the PNW</h1>
+	<img src="PNW.png" width="50%" height="auto">
+	</a>
+	</div>
+	<div class="hovercontent">
+		<p>The Pacific northwest is a beautiful area with stunning natural beauty, lush forests, rugged coastlines, majestic mountains, and abundant wildlife. PNW is also home to famous cities such as Seattle, Portland, and Vancouver. If you are ever looking for a place with amazing natural beauty and thriving cultures, Pacific northwest is the best spot for you! Click the link for more info! </p>
+	</div>
+	</a>
+	</button>
+	</div>
+
+	<div id="SuRpRiSeeee">
+	<a href="cutegame.html" target="blank">
+	<button>
+	<div class="title">
+	<img src="mystery.png" width="auto" height="240px">
+	</a>
+	</div>
+	<div class="hovercontent">This will link you to another webpage. Surprise, maybe?</div>
+	</button>
+	</div>
+
+<footer>
+	
+</footer>
+</body>
+
+<script>
+//This is the function for the animation of the intro image. This will slowly ease-in the image and provide the picture with a smooth animation
+	function nextImage() {
+
+        let img = document.getElementById('img1');
+        img.classList.remove('hidden');
+        setTimeout(function () {
+            img.classList.add('hidden');
+        },animationTime-1000);
+        img.src=randomize();
+
+    }
+    setTimeout(nextImage, animationTime);
+
+</script>
+
+
+</html>

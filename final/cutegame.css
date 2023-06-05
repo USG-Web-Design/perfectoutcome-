@@ -1,0 +1,23 @@
+body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+/*this code is for the homepage button*/
+div{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  border:2px solid black;
+  height: 1px;
+  width: 1px;
+}
+
+/*this is for the background image*/
+body{
+    background-image: url('back.jpeg');
+    size: auto;
+    padding:0;
+    margin:0;
+}

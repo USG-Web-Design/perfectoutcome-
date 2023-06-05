@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Time to walk your cat...</title>
+		<style type="text/css"> </style>
+		<link rel="stylesheet" type="text/css" href="cutegame.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>	
+
+	<body>
+
+	<!--this code creates a dic for the cat image-->
+	<p style="height: 200px; width: 200px;">
+		<div id="circle">
+   			<img src="cutecat.png" style="height: 150px; width: auto;">
+   		</div>
+	</p>
+
+   		  
+ 	</body>
+
+</html>
+   	<script type="text/javascript">
+   		//This function makes sure that the div will follow the lead of the mouse
+   		alert('Time to walk your cat...')
+
+		let circle = document.getElementById('circle');
+
+		const onMouseMove = (e) =>{
+ 		circle.style.left = e.pageX + 'px';
+  		circle.style.top = e.pageY + 'px';
+		}
+
+		document.addEventListener('mousemove', onMouseMove);
+
+	</script>
